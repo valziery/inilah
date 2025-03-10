@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Girlfriend?</title>
+    <!-- CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.6.0/confetti.browser.min.js"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- Icon -->
+    <link rel="Icon" href="images/teddy-bear.png" type="images/png">
+</head>
+<body>
+    <div class="hearts"></div>
+    <div class="container">
+        <!-- Step 1 -->
+        <div class="step active" id="step1">
+            <img src="images/step2.gif" alt="Cute Bear" class="bear-img">
+            <h1>Kamu mau jadi pacarku? 💝</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="goToStep2()">Mau</button>
+                <button class="btn btn-no" onmouseover="moveButton(this)" onclick="moveButton(this)">Ngga</button>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step" id="step2">
+            <img src="images/dudu-twisting-dance.gif" alt="Cute Bear with Hearts" class="bear-img">
+            <h1>Serius mau jadi pacarku? 💕</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="goToStep3()">Iya beneran</button>
+                <button class="btn btn-no" onmouseover="moveButton(this)" onclick="moveButton(this)">Ga jadi deh</button>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" id="step3">
+            <img src="images/step22.gif" alt="Cute Bear in Love" class="bear-img">
+            <h1>Janjikan beneran kamu mau🥺</h1>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="finalStep()">Iya, aku janji</button>
+            </div>
+        </div>
+
+        <!-- Final Message -->
+        <div class="final-message">
+            <img src="images/stafford-matt-unscreen.gif" alt="Cute Bear in Love" class="bear-img">
+            <p>Yeayyyyy, I Love You! 🥰</p>
+            <p style="margin-top: 15px;">Sekarang kamu bisa click tombolnya biar kita chatan di whatsapp🥰</p>
+        </div>
+        
+        <a href="https://wa.me/+6282249763982?text=Halo" class="whatsapp-btn" target="_blank">
+            Pencet ini
+        </a>        
+    </div>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
